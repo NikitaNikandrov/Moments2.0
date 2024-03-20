@@ -15,6 +15,7 @@
 		E5E6F1352BAA002A003428FF /* Moments2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E6F1342BAA002A003428FF /* Moments2_0Tests.swift */; };
 		E5E6F13F2BAA002A003428FF /* Moments2_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E6F13E2BAA002A003428FF /* Moments2_0UITests.swift */; };
 		E5E6F1412BAA002A003428FF /* Moments2_0UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E6F1402BAA002A003428FF /* Moments2_0UITestsLaunchTests.swift */; };
+		E5E6F14F2BAB6D5C003428FF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E6F14E2BAB6D5B003428FF /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		E5E6F13A2BAA002A003428FF /* Moments2.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Moments2.0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E6F13E2BAA002A003428FF /* Moments2_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moments2_0UITests.swift; sourceTree = "<group>"; };
 		E5E6F1402BAA002A003428FF /* Moments2_0UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moments2_0UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E5E6F14E2BAB6D5B003428FF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		E5E6F11C2BAA0029003428FF /* Moments2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				E5E6F14D2BAB6D2E003428FF /* NetworkService */,
 				E5E6F11D2BAA0029003428FF /* AppDelegate.swift */,
 				E5E6F11F2BAA0029003428FF /* SceneDelegate.swift */,
 				E5E6F1212BAA0029003428FF /* ViewController.swift */,
@@ -122,6 +125,14 @@
 				E5E6F1402BAA002A003428FF /* Moments2_0UITestsLaunchTests.swift */,
 			);
 			path = Moments2.0UITests;
+			sourceTree = "<group>";
+		};
+		E5E6F14D2BAB6D2E003428FF /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				E5E6F14E2BAB6D5B003428FF /* NetworkService.swift */,
+			);
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +267,7 @@
 			files = (
 				E5E6F1222BAA0029003428FF /* ViewController.swift in Sources */,
 				E5E6F11E2BAA0029003428FF /* AppDelegate.swift in Sources */,
+				E5E6F14F2BAB6D5C003428FF /* NetworkService.swift in Sources */,
 				E5E6F1202BAA0029003428FF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
