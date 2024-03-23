@@ -16,6 +16,9 @@
 		E5E6F13F2BAA002A003428FF /* Moments2_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E6F13E2BAA002A003428FF /* Moments2_0UITests.swift */; };
 		E5E6F1412BAA002A003428FF /* Moments2_0UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E6F1402BAA002A003428FF /* Moments2_0UITestsLaunchTests.swift */; };
 		E5E6F14F2BAB6D5C003428FF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E6F14E2BAB6D5B003428FF /* NetworkService.swift */; };
+		E5E6F1522BAF1D25003428FF /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E6F1512BAF1D25003428FF /* AuthServices.swift */; };
+		E5E6F1552BAF1D6F003428FF /* AuthRequestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E6F1542BAF1D6F003428FF /* AuthRequestModels.swift */; };
+		E5E6F1572BAF1FC9003428FF /* AuthResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E6F1562BAF1FC9003428FF /* AuthResponseModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		E5E6F13E2BAA002A003428FF /* Moments2_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moments2_0UITests.swift; sourceTree = "<group>"; };
 		E5E6F1402BAA002A003428FF /* Moments2_0UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moments2_0UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E5E6F14E2BAB6D5B003428FF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		E5E6F1512BAF1D25003428FF /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
+		E5E6F1542BAF1D6F003428FF /* AuthRequestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestModels.swift; sourceTree = "<group>"; };
+		E5E6F1562BAF1FC9003428FF /* AuthResponseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponseModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		E5E6F11C2BAA0029003428FF /* Moments2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				E5E6F1502BAF1CF4003428FF /* AuthServices */,
 				E5E6F14D2BAB6D2E003428FF /* NetworkService */,
 				E5E6F11D2BAA0029003428FF /* AppDelegate.swift */,
 				E5E6F11F2BAA0029003428FF /* SceneDelegate.swift */,
@@ -133,6 +140,24 @@
 				E5E6F14E2BAB6D5B003428FF /* NetworkService.swift */,
 			);
 			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		E5E6F1502BAF1CF4003428FF /* AuthServices */ = {
+			isa = PBXGroup;
+			children = (
+				E5E6F1532BAF1D46003428FF /* AuthModels */,
+				E5E6F1512BAF1D25003428FF /* AuthServices.swift */,
+			);
+			path = AuthServices;
+			sourceTree = "<group>";
+		};
+		E5E6F1532BAF1D46003428FF /* AuthModels */ = {
+			isa = PBXGroup;
+			children = (
+				E5E6F1542BAF1D6F003428FF /* AuthRequestModels.swift */,
+				E5E6F1562BAF1FC9003428FF /* AuthResponseModels.swift */,
+			);
+			path = AuthModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5E6F1522BAF1D25003428FF /* AuthServices.swift in Sources */,
 				E5E6F1222BAA0029003428FF /* ViewController.swift in Sources */,
 				E5E6F11E2BAA0029003428FF /* AppDelegate.swift in Sources */,
+				E5E6F1572BAF1FC9003428FF /* AuthResponseModels.swift in Sources */,
+				E5E6F1552BAF1D6F003428FF /* AuthRequestModels.swift in Sources */,
 				E5E6F14F2BAB6D5C003428FF /* NetworkService.swift in Sources */,
 				E5E6F1202BAA0029003428FF /* SceneDelegate.swift in Sources */,
 			);
