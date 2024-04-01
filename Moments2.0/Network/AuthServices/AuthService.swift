@@ -14,7 +14,7 @@ protocol AuthServiceProtocol {
                                  completion: @escaping(Result<AuthResponseModel, Error>) -> Void)
 }
 
-class AuthService {
+class AuthService: AuthServiceProtocol {
     
     private let nwService: NetworkServiceProtocol
     
