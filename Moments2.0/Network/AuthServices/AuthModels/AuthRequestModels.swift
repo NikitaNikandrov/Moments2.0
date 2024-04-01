@@ -16,5 +16,4 @@ struct RegistrationRequestModel {
     let name: String
     let email: String
     let password: String
-    let passwordConf: String
 }
