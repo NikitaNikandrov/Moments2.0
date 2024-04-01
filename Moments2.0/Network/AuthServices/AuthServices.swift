@@ -7,7 +7,14 @@
 
 import Foundation
 
-class AuthServices {
+protocol AuthServiceProtocol {
+    func sendLoginRequest(dataForLogin: LoginRequestModel,
+                          completion: @escaping(Result<AuthResponseModel, Error>) -> Void)
+    func sendRegistrationRequest(dataForRegistration: RegistrationRequestModel,
+                                 completion: @escaping(Result<AuthResponseModel, Error>) -> Void)
+}
+
+class AuthService {
     
     private let nwService: NetworkServiceProtocol
     
@@ -40,7 +47,7 @@ class AuthServices {
     }
     
     func sendRegistrationRequest(dataForRegistration: RegistrationRequestModel,
-                         completion: @escaping(Result<AuthResponseModel, Error>) -> Void) {
+                                 completion: @escaping(Result<AuthResponseModel, Error>) -> Void) {
         
         let path = "/registration"
         let queryItems = [URLQueryItem(name: "name", value: "\(dataForRegistration.name)"),
